@@ -1,10 +1,10 @@
 <?php
 
-namespace  Insitaction\ThrowResponseBundle\Controller;
+namespace Insitaction\ThrowResponseBundle\Controller;
 
-use Insitaction\ThrowResponseBundle\Exception\ResponseException;
-use Insitaction\ThrowResponseBundle\Exception\JsonResponseException;
 use Exception;
+use Insitaction\ThrowResponseBundle\Exception\JsonResponseException;
+use Insitaction\ThrowResponseBundle\Exception\ResponseException;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

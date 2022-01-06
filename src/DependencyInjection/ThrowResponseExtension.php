@@ -10,13 +10,13 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class ThrowResponseExtension extends Extension implements PrependExtensionInterface
 {
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
     }
 
-    public function prepend(ContainerBuilder $container)
+    public function prepend(ContainerBuilder $container): void
     {
         $newConfig = [
             'error_controller' => 'Insitaction\ThrowResponseBundle\Controller\ErrorController::action',
