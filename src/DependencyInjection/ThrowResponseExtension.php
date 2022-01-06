@@ -19,7 +19,7 @@ class ThrowResponseExtension extends Extension implements PrependExtensionInterf
     public function prepend(ContainerBuilder $container)
     {
         $newConfig = [
-            'error_controller' => 'App\Controller\ErrorController::action',
+            'error_controller' => 'Insitaction\ThrowResponseBundle\Controller\ErrorController::action',
         ];
 
         $container->prependExtensionConfig('framework', $newConfig);
