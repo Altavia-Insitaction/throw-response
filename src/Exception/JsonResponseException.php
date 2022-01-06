@@ -4,6 +4,6 @@ namespace Insitaction\ThrowResponseBundle\Exception;
 
 use Exception;
 
-abstract class JsonResponseException extends Exception
+class JsonResponseException extends Exception
 {
 }

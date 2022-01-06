@@ -4,6 +4,6 @@ namespace Insitaction\ThrowResponseBundle\Exception;
 
 use Exception;
 
-abstract class ResponseException extends Exception
+class ResponseException extends Exception
 {
 }
