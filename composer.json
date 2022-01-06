@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "name": "insitaction/throw-response-bundle",
+    "description": "Allows to send response where you want with a throw.",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=8.0",
+        "symfony/framework-bundle": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Insitaction\\ThrowResponseBundle\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julien Blairy",
+            "email": "jblairy@insitaction.com"
+        }
+    ]
+}
