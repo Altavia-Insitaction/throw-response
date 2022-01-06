@@ -16,7 +16,7 @@ class ErrorController
      * @throws TypeError
      * @throws Exception
      */
-    public function show(Request $request): ?Response
+    public function action(Request $request): ?Response
     {
         $exception = $request->attributes->get('exception');
 
